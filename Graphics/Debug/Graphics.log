@@ -1,0 +1,7 @@
+﻿  main.c
+  waving-flag.c
+C:\Users\Itay\Desktop\Computed Graphics\Graphics\Graphics\Graphics\Graphics\waving-flag.c(11,6): warning C4101: 'i': unreferenced local variable
+C:\Users\Itay\Desktop\Computed Graphics\Graphics\Graphics\Graphics\Graphics\waving-flag.c(56,25): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+C:\Users\Itay\Desktop\Computed Graphics\Graphics\Graphics\Graphics\Graphics\waving-flag.c(57,19): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+  Generating Code...
+  Graphics.vcxproj -> C:\Users\Itay\Desktop\Computed Graphics\Graphics\Graphics\Graphics\Debug\Graphics.exe
