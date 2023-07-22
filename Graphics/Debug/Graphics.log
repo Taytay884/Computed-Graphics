@@ -1,10 +1,18 @@
 ﻿  waving-flag.c
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(33,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(34,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(35,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(41,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(47,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(25,16): warning C4101: 'dist2': unreferenced local variable
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(84,25): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Graphics\waving-flag.c(85,19): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
-  Graphics.vcxproj -> C:\Users\Itay\Desktop\Computed Graphics\Computed Graphics Lab\Debug\Graphics.exe
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(32,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(33,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(34,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(40,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(47,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(61,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(74,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(81,27): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(92,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(105,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(117,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(124,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(134,26): warning C4244: '+=': conversion from 'double' to 'unsigned char', possible loss of data
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(24,16): warning C4101: 'dist2': unreferenced local variable
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(167,18): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+C:\Afeka\Computed Graphics\Computed-Graphics\Graphics\waving-flag.c(168,15): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+  Graphics.vcxproj -> C:\Afeka\Computed Graphics\Computed-Graphics\Debug\Graphics.exe

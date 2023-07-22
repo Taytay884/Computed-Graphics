@@ -8,7 +8,6 @@
 #define HEIGHT 600
 #define WIDTH 600
 
-double x = 0;
 double offset = 0;
 
 unsigned char pixels[HEIGHT][WIDTH][3];
@@ -26,28 +25,113 @@ void init()
 	for (i = 0; i < HEIGHT; i++) {
 		for (j = 0; j < WIDTH; j++) {
 			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
-			pixels[i][j][0] = 150; // 0 RED
-			pixels[i][j][1] = 150; // 1 GREEN
-			pixels[i][j][2] = 150; // 2 BLUE
+			pixels[i][j][0] = 200; // 0 RED
+			pixels[i][j][1] = 200; // 1 GREEN
+			pixels[i][j][2] = 200; // 2 BLUE
 
-			pixels[i][j][0] += 50 * sin(dist1 / 40.0 + offset);
-			pixels[i][j][1] += 50 * sin(dist1 / 40.0 + offset);
-			pixels[i][j][2] += 50 * sin(dist1 / 40.0 + offset);
+			pixels[i][j][0] += 55 * sin(dist1 / 40.0 + offset);
+			pixels[i][j][1] += 55 * sin(dist1 / 40.0 + offset);
+			pixels[i][j][2] += 55 * sin(dist1 / 40.0 + offset);
 			// first strip
 			if (i >= HEIGHT / 6 && i <= HEIGHT / 6 * 2) {
 				pixels[i][j][0] = 0; // 0 RED
 				pixels[i][j][1] = 0; // 1 GREEN
 				pixels[i][j][2] = 150; // 2 BLUE
-				pixels[i][j][2] += 50 * sin(dist1 / 40.0 + offset);
+				pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
 			}
+			// second strip
 			if (i >= HEIGHT / 6 * 4 && i <= HEIGHT / 6 * 5) {
 				pixels[i][j][0] = 0; // 0 RED
 				pixels[i][j][1] = 0; // 1 GREEN
 				pixels[i][j][2] = 150; // 2 BLUE
-				pixels[i][j][2] += 50 * sin(dist1 / 40.0 + offset);
+				pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
 			}
-			dist1 = distance(j, i, -WIDTH, HEIGHT/2);
-			//if (dist 0)
+		}
+	}
+	//Magen David
+	int x = centerX; int y = centerY + 50;
+	int yEnd = centerY - 50;
+	// top triangle
+	for (int i = y + 10, count = -1; i > y; i--, count++) {
+		for (int j = x - count; j <= x + count; j++) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+		}
+	}
+	int space = 0;
+	int width = 10;
+	// diagonals
+	for (int i = y; i > yEnd; i--) {
+			width = 10;
+			for (int j = x - space; j > x - space - width; j--) {
+				pixels[i][j][0] = 0; // 0 RED
+				pixels[i][j][1] = 0; // 1 GREEN
+				pixels[i][j][2] = 150; // 2 BLUE
+				dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+				pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+			}
+			for (int j = x + space; j < x + space + width; j++) {
+				pixels[i][j][0] = 0; // 0 RED
+				pixels[i][j][1] = 0; // 1 GREEN
+				pixels[i][j][2] = 150; // 2 BLUE
+				dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+				pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+			}
+		space++;
+	}
+	// horizontal
+	for (int i = yEnd + 8; i > yEnd; i--) {
+		for (int j = x - space; j < x + space; j++) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+		}
+	}
+
+	x = centerX; y = centerY - 70;
+	yEnd = centerY + 30;
+	//for (int i = y; i > y - 10)
+	for (int i = y - 10, count = -1; i < y; i++, count++) {
+		for (int j = x - count; j <= x + count; j++) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+		}
+	}
+	space = 0;
+	width = 10;
+	for (int i = y; i < yEnd; i++) {
+		width = 10;
+		for (int j = x - space; j > x - space - width; j--) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+		}
+		for (int j = x + space; j < x + space + width; j++) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
+		}
+		space++;
+	}
+	for (int i = yEnd - 8; i < yEnd; i++) {
+		for (int j = x - space; j < x + space; j++) {
+			pixels[i][j][0] = 0; // 0 RED
+			pixels[i][j][1] = 0; // 1 GREEN
+			pixels[i][j][2] = 150; // 2 BLUE
+			dist1 = distance(j, i, -WIDTH, HEIGHT / 2);
+			pixels[i][j][2] += 60 * sin(dist1 / 40.0 + offset);
 		}
 	}
 }
@@ -66,8 +150,7 @@ void display()
 
 void idle()
 {
-	x++;
-	offset -= 0.03;
+	offset -= 0.05;
 	init();
 	glutPostRedisplay();
 }
@@ -79,7 +162,7 @@ void wavingFlag(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
 	glutInitWindowSize(WIDTH, HEIGHT);
 	glutInitWindowPosition(200, 100);
-	glutCreateWindow("First Example");
+	glutCreateWindow("Waving Israel Flag");
 
 	glutDisplayFunc(display);
 	glutIdleFunc(idle);
