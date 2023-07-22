@@ -119,9 +119,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="smiley.c" />
     <ClCompile Include="waving-flag.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="smiley.h" />
     <ClInclude Include="waving-flag.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

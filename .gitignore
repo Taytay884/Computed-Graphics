@@ -1,1 +1,5 @@
 .vs/
+x64/
+Debug/
+Graphics/x64/
+Graphics/Debug/
